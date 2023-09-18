@@ -5,22 +5,28 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			favicon: '/favicon.ico',
+			title: 'Insidr Documentation',
+			logo: {
+				light: './src/assets/light-logo.svg',
+				dark: './src/assets/dark-logo.svg',
+				replacesTitle: true,
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/insidrmusic/insidr',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					label: 'Get started',
+					autogenerate: { directory: 'get-started' },
 				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+			],
+			customCss: [
+				'@fontsource/barlow/500.css',
+				'@fontsource/barlow/700.css',
+				'@fontsource/barlow/800.css',
+				'@fontsource/barlow/900.css',
+				'./src/styles/custom.css',
 			],
 		}),
 	],
