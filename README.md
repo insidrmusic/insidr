@@ -2,6 +2,10 @@
 
 **The Home of Unreleased Music**
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c571560-cc01-4e68-9e0e-30ce4bf7df3e/deploy-status)](https://app.netlify.com/sites/insidr-docs/deploys)
+
+[READ: Insidr Documentation](https://docs.insidrmusic.com/)
+
 [Insidr](https://insidrmusic.com/) is the open source Spotify-meets-Patreon music streaming platform.
 
 ## How does Insidr work for music artists?
@@ -19,6 +23,7 @@
 - [Quasar framework](https://quasar.dev/)
 - [Supabase](https://supabase.com/)
 - [Starlight (Docs)](https://starlight.astro.build/)
+- [Netlify](https://www.netlify.com/)
 
 ## Run
 
