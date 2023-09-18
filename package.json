@@ -1,0 +1,9 @@
+{
+  "name": "insidr",
+  "version": "0.0.0",
+  "description": "The open source Spotify-meets-Patreon music streaming platform",
+  "repository": "git@github.com:insidrmusic/insidr.git",
+  "author": "Insidr Limited",
+  "license": "Apache-2.0",
+  "private": true
+}
