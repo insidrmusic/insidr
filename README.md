@@ -26,6 +26,7 @@
 - [Supabase](https://supabase.com/)
 - [Starlight (Docs)](https://starlight.astro.build/)
 - [Netlify](https://www.netlify.com/)
+- [Simple Analytics](https://www.simpleanalytics.com/?referral=badot)
 
 ## Run
 
@@ -48,6 +49,17 @@ quasar dev
 ```bash
 cd apps/docs
 yarn run dev
+```
+
+## Build
+
+**Docs**
+
+```bash
+[build]
+    base = "apps/docs/"
+    publish = "apps/docs/dist"
+    command = "npm run build"
 ```
 
 ## Contributing

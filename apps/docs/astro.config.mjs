@@ -5,6 +5,29 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
+			head: [
+				{
+				  tag: 'script',
+				  attrs: {
+					src: 'https://scripts.simpleanalyticscdn.com/latest.js',
+					async: true,
+					defer: true,
+				  },
+				},
+				{
+				  tag: 'noscript',
+				  children: [
+					{
+					  tag: 'img',
+					  attrs: {
+						src: 'https://queue.simpleanalyticscdn.com/noscript.gif',
+						alt: '',
+						referrerpolicy: 'no-referrer-when-downgrade',
+					  },
+					},
+				  ],
+				},
+			],
 			favicon: '/favicon.ico',
 			title: 'Insidr Documentation',
 			logo: {
