@@ -55,7 +55,7 @@ yarn run dev
 
 **Docs**
 
-```bash
+```toml
 [build]
     base = "apps/docs/"
     publish = "apps/docs/dist"
